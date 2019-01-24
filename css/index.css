@@ -1,15 +1,22 @@
 body{
   margin: 0;
   padding: 0;
-  height: 2500px;
 }
 .header_white{
   position: fixed;
   z-index: 1000;
   width: 100%;
-  height: 70px;
+  height: 75px;
   border: 1px solid #eeeeee;
   background: #f5f5f5;
+}
+.logo{
+  width:70px;
+  height:70px;
+  transition: transform 2s;
+}
+.logo:hover{
+  transform: rotate(360deg);
 }
 .headl{
   font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -25,66 +32,85 @@ body{
   align-items: center;
 }
 .sp{
-  margin-right: 40px;
+  margin-right: 5%;
   text-decoration: none;
+  font-family: 'Oswald', sans-serif;
 }
 a {
   color: #000 !important;
 }
 .sp1:hover{
-  color:#67d0ca;
+  color:#f51c1c;
+}
+.vl{
+  position: relative;
+  width: 100%;
+  height: 30vh;
 }
 .vd{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
-  height: auto;
+  min-height: 100%;
 }
-/* .h{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 .sh{
   color: white;
   font-family: impact;
 
 }
-.si{
-    font-size: 90px;
+.h {
+    z-index: 1;
     position: relative;
+    top: 20ex;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+ .si{
+    font-size: 550%;
+    /* position: relative;
     bottom: 420px;
-    left: 250px;
+    left: 250px; */
 }
 .si1{
-    font-size: 25px;
-    position: relative;
+    font-size: 200%;
+    margin: 1%;
+     /* position: relative;
     bottom: 400px;
-    left: 465px;
+    left: 465px; */
 }
+.si2{
+  /* position: relative;
+  bottom: 400px;
+  left: 555px; */
+  height: 10%;
+  width: 10%;
+  transition: transform 2s;
+  }
+  .si2:hover{
+  transform: rotate(-360deg);
+  }
 hr {
-    border: none; /* Убираем границу */
-    background-color: black; /* Цвет линии */
-    color: red; /* Цвет линии для IE6-7 */
-    height: 10px; /* Толщина линии */
-    width: 70px;
+    border: none; /* Убираем границу*/
+    background-color: black; /* Цвет линии*/
+    color: red; /* Цвет линии для IE6-7*/
+    height: 10px; /* Толщина линии*/
+    width: 20vh;
    }
-.mag{
-     width: 300px;
-     position: relative;
-     left: 139px;
-   }
-.cone{
-     position: relative;
-     bottom: 100px;
+.vl1{
+  position: relative;
+  top: 30em;
 }
-.row{
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-basis: 50%;
+.iii{
+  width: 500px;
+  height: 500px;
 }
-/* .vl, .vl1, footer{
-  background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
+.hhh{
+  width: 30em;
+}
