@@ -1,0 +1,285 @@
+*, *:after, *:before {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	transition: .5s ease-in-out;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	outline: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display';
+	font-weight: normal;
+	letter-spacing: 1px;
+}
+header:after, .container:after, footer:after, .widget-posts-list li:after, #subscribe:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+body {
+	font-family: 'Open Sans', arial, sans-serif;
+	font-size: 14px;
+	line-height: 1;
+	color: #373737;
+	background: #f7f7f7;
+}
+header {
+	width: 100%;
+	background: white;
+	box-shadow: 3px 3px 1px rgba(0,0,0,.05);
+	padding: 15px 0;
+	margin-bottom: 30px;
+position:relative;
+}
+.container {
+	margin: 0 auto;
+  width: 100%;
+	max-width: 960px;
+	padding: 0 5px;
+}
+nav {
+	width: 100%;
+}
+.logo {
+	display: block;
+	float: left;
+}
+ .logo div span {
+	color: black;
+	display: inline-block;
+	line-height: 30px;
+	border-radius: 50%;
+	/* margin: 5px 0; */
+	text-align: center;
+	text-shadow: 2px 2px 1px rgba(0,0,0,.4);
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.logo div .logosp1{
+  font-size: 2em;
+}
+.logo div .logosp2{
+  font-size: 1.3em;
+}
+.logo div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.logoimg{
+  width: 55px;
+  height: 60px;
+  float: left;
+  margin-right: 10px;
+  transition: transform 2s;
+}
+.logoimg:hover{
+  transform: rotate(360deg);
+}
+ .nav-toggle, #searchform, #menu{
+  margin-top: 0.7em;
+}
+#menu {
+	float: right;
+}
+#menu li {
+	display: inline-block;
+    margin-right: 30px;
+}
+#menu a {
+	color: #111;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 600;
+	display: block;
+	line-height: 40px;
+  font-family: 'Oswald', sans-serif;
+}
+#menu a:hover {
+	color: #f51c1c;
+}
+#menu li:last-child  {
+	margin-right: 0;
+}
+#searchform {
+	float: right;
+	margin-left: 26px;
+	display: inline-block;
+	position: relative;
+}
+#searchform input {
+	width: 170px;
+	float: left;
+	border: none;
+	padding-left: 10px;
+	height: 40px;
+	overflow: hidden;
+	outline: none;
+	color: #9E9C9C;
+	font-style: italic;
+}
+#searchform button {
+	background: transparent;
+	height: 40px;
+	border: none;
+	position: absolute;
+	right: 10px;
+	color: #f51c1c;
+	cursor: pointer;
+	font-size: 18px;
+}
+#searchform input:focus {
+	outline: 2px solid #EBEBE3;
+}
+.nav-toggle {
+	display: none;
+	position: relative;
+	float: right;
+	width: 40px;
+	height: 40px;
+	margin-left: 20px;
+	background: #EF5A42;
+	cursor: pointer;
+}
+.nav-toggle span {
+	display: block;
+	position: absolute;
+	top: 19px;
+	left: 8px;
+	right: 8px;
+	height: 2px;
+	background: white;
+}
+.nav-toggle span:before, .nav-toggle span:after {
+	position: absolute;
+	display: block;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: white;
+	content: "";
+}
+.nav-toggle span:before {
+	top: -10px;
+}
+.nav-toggle span:after {
+	bottom: -10px;
+}
+#menu.active {
+	max-height: 173px;
+  position: absolute;
+  top: 5em;
+}
+
+
+@media(max-width: 880px){
+  .logoimg{
+    width: 50px;
+    height: 55px;
+  }
+  .logo div .logosp1{
+    font-size: 1.7em;
+  }
+  .logo div .logosp2{
+    font-size: 1.09em;
+  }
+}
+@media(max-width: 845px){
+  #menu a{
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 768px) {
+/* показываем кнопку для переключения верхней навигации */
+.nav-toggle {
+display: block;
+}
+header {
+padding: 10px 0;
+}
+/* скрываем верхнее меню, отменяем обтекание, позиционируем его, сместив на высоту шапки сайта */
+#menu {
+max-height: 0;
+background: white;
+float: none;
+position: absolute;
+overflow: hidden;
+top: 63px;
+right: 0;
+left: 0;
+margin: 0;
+padding: 0;
+z-index: 3;
+}
+/* делаем элементы списка блочными, чтобы они располагались друг под другом */
+#menu li {
+display: block;
+padding-left: 15px;
+border-bottom: 1px solid #EBEBE3;
+margin-right: 0;
+}
+/* отменяем обтекание левой и правой колонок, устанавливаем им ширину 100%*/
+.posts-list, aside {
+width: 100%;
+float: none;
+}
+.widget-post-title {
+font-size: 1.5em;
+}
+}
+@media (max-width: 480px) {
+/* выравниванием логотип по центру */
+nav {
+text-align: center;
+}
+/* отменяем обтекание для логотипа */
+.logo {
+float: none;
+margin-bottom: 15px;
+display: flex;
+justify-content: center;
+}
+/* позиционируем меню на увеличившуюся высоту шапки */
+#menu {
+top: 118px;
+}
+/* позиционируем форму поиска по левому краю */
+#searchform {
+float: left;
+margin-left: 0;
+}
+/* убираем верхнюю и нижнюю границы и выравниваем кнопку по центру */
+.post-footer {
+border-top: none;
+border-bottom: none;
+text-align: center;
+}
+/* отменяем позиционирование кнопок соцсетей */
+.post-social {
+position: static;
+text-align: center;
+transform: none;
+margin-top: 20px;
+}
+.widget-post-title {
+font-size: 1.2em;
+}
+/* отменяем обтекание для столбцов подвала страницы */
+.footer-col {
+float: none;
+margin-bottom: 20px;
+width: 100%;
+text-align: center;
+}
+.footer-col:last-child {
+text-align: center;
+margin-bottom: 0;
+}
+#menu.active {
+  top: 10em;
+}
+}
