@@ -1,0 +1,369 @@
+@media(max-width: 885px){
+  .slimg{
+    height: 250px;
+    width: 250px;
+  }
+}
+@media(max-width: 970px){
+  .si{
+    font-size: 5em;
+  }
+  .h{
+    top: 7em;
+  }
+}
+@media(max-width: 950px){
+  .sp{
+    font-size: 1.1em;
+  }
+  .shop{
+    width: 25em;
+  }
+}
+@media(max-width: 950px){
+  .sp{
+    font-size: 1.1em;
+  }
+  .shop{
+    width: 25em;
+  }
+}
+@media(max-width: 885px){
+  .slimg{
+    width: 250px;
+    height: 250px;
+  }
+  .slimg2,.slimg3{
+    height: 200px;
+    width: 200px;
+  }
+  .sl1,.sl4,.sl5,.sl2,.sl3{
+    position: relative;
+    top: 3.7em;
+  }
+}
+@media(max-width: 880px){
+  .logoimg{
+    width: 50px;
+    height: 55px;
+  }
+  .logo div .logosp1{
+    font-size: 1.7em;
+  }
+  .logo div .logosp2{
+    font-size: 1.09em;
+  }
+  .shop{
+    width: 23em;
+  }
+}
+@media(max-width: 845px){
+  #menu a{
+    font-size: 0.8em;
+  }
+  .si{
+    font-size: 4em;
+  }
+  .si1{
+    font-size: 1.5em;
+  }
+  .sr{
+    font-size: 3em;
+  }
+  .shop{
+    width: 20em;
+  }
+}
+@media(max-width: 790px){
+  .sp{
+    font-size: 1.08em;
+  }
+  .sr{
+    font-size: 2.5em;
+  }
+  .shop{
+    width: 25em;
+    margin-right: 2em;
+  }
+  .slh{
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 768px) {
+/* показываем кнопку для переключения верхней навигации */
+.nav-toggle {
+display: block;
+}
+header {
+padding: 10px 0;
+}
+/* скрываем верхнее меню, отменяем обтекание, позиционируем его, сместив на высоту шапки сайта */
+#menu {
+max-height: 0;
+background: white;
+float: none;
+position: absolute;
+overflow: hidden;
+top: 5em;
+right: 0;
+left: 0;
+margin: 0;
+padding: 0;
+z-index: 3;
+}
+/* делаем элементы списка блочными, чтобы они располагались друг под другом */
+#menu li {
+display: block;
+padding-left: 15px;
+border-bottom: 1px solid #EBEBE3;
+margin-right: 0;
+}
+/* отменяем обтекание левой и правой колонок, устанавливаем им ширину 100%*/
+.posts-list, aside {
+width: 100%;
+float: none;
+}
+.widget-post-title {
+font-size: 1.5em;
+}
+.vl{
+  top: 5em;
+}
+.vl1{
+  flex-direction: column;
+  top: 20em;
+}
+.shop{
+  width: 60%;
+  margin: 0 auto;
+}
+.mon{
+  width: 60%;
+  /* margin-left: 10em; */
+  margin: 0 auto;
+}
+.sp{
+  font-size: 1.3em;
+}
+.sr{
+  font-size: 3.7em;
+}
+section{
+  top: 15em;
+}
+}
+@media(max-width: 700px){
+  .h{
+    top: 5em;
+  }
+  .sr{
+    font-size: 3em;
+  }
+}
+@media(max-width: 590px){
+  .si{
+    font-size: 3em;
+  }
+  .si1{
+    font-size: 1em;
+  }
+  .sp{
+    font-size: 1.1em;
+  }
+  .sr{
+    font-size: 2.4em;
+  }
+}
+@media(max-width: 520px){
+  .sp{
+    font-size: 1em;
+  }
+}
+@media(max-width: 510px){
+  .slimg{
+    height: 200px;
+    width: 200px;
+  }
+  .slh{
+    font-size: 1.5em;
+  }
+  .sltxt1,.sltxt4,.sltxt5{
+    position: relative;
+    top: 7em;
+  }
+}
+@media(max-width: 500px){
+  .shop{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .mon{
+    width: 60%;
+    height: 25em;
+    margin: 0 auto;
+  }
+  .sp{
+    font-size: 1.1em;
+    margin-left: 2em;
+  }
+  .sr{
+    font-size: 2.4em;
+    margin-left: 0.9em;
+  }
+  hr{
+    margin-left: 2.1em;
+  }
+}
+@media (max-width: 480px) {
+/* выравниванием логотип по центру */
+nav {
+text-align: center;
+}
+/* отменяем обтекание для логотипа */
+.logo {
+float: none;
+margin-bottom: 15px;
+display: flex;
+justify-content: center;
+}
+/* позиционируем меню на увеличившуюся высоту шапки */
+#menu {
+top: 10em;
+}
+/* позиционируем форму поиска по левому краю */
+#searchform {
+float: left;
+margin-left: 0;
+}
+/* убираем верхнюю и нижнюю границы и выравниваем кнопку по центру */
+.post-footer {
+border-top: none;
+border-bottom: none;
+text-align: center;
+}
+/* отменяем позиционирование кнопок соцсетей */
+.post-social {
+position: static;
+text-align: center;
+transform: none;
+margin-top: 20px;
+}
+.widget-post-title {
+font-size: 1.2em;
+}
+/* отменяем обтекание для столбцов подвала страницы */
+.footer-col {
+float: none;
+margin-bottom: 20px;
+width: 100%;
+text-align: center;
+}
+.footer-col:last-child {
+text-align: center;
+margin-bottom: 0;
+}
+.vl{
+  position: relative;
+  top: 10em;
+}
+.h{
+  top: 4em;
+}
+#menu.active {
+  top: 10em;
+}
+.shop{
+  width: 60%;
+  margin: 0 auto;
+}
+.mon{
+  width: 60%;
+  /* margin-left: 10em; */
+  margin: 0 auto;
+}
+.sp{
+  font-size: 1.1em;
+  margin-left: 2em;
+}
+.sr{
+  font-size: 2em;
+  margin-left: 0.9em;
+}
+.shop{
+  width: 80%;
+}
+hr{
+  margin-left: 2.1em;
+}
+}
+@media(max-width: 440px){
+  .si{
+    font-size: 2em;
+  }
+  .si1{
+    font-size: 0.7em;
+  }
+  .sl1,.sl2,.sl3,.sl4,.sl5{
+  	height: 20em;
+  }
+  .slimg{
+    width: 200px;
+    height: 200px;
+  }
+  .slimg2{
+    height: 170px;
+  }
+  .slimg3{
+    margin-top: 0px;
+  }
+  .sltxt2{
+    top: 1.6em;
+  }
+  .sltxt3{
+    top: 0em;
+  }
+}
+@media(max-width: 400px){
+  .sr{
+    font-size: 3em;
+  }
+  .sp{
+    font-size: 1em;
+  }
+  .mon{
+    height: 20em;
+  }
+  .sp{
+    font-size: 1.1em;
+    margin-left: 2em;
+  }
+  .sr{
+    font-size: 2em;
+    margin-left: 0.9em;
+  }
+  .shop{
+    width: 80%;
+  }
+  hr{
+    margin-left: 2.1em;
+  }
+}
+@media(max-width: 370px){
+  .h{
+    top: 3em;
+  }
+}
+@media(max-width: 300px){
+  .si{
+    font-size: 1.5em;
+  }
+  .si1{
+    font-size: 0.6em;
+  }
+  .h{
+    top: 2em;
+  }
+}

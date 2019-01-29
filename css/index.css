@@ -1,41 +1,3 @@
-/* body{
-  margin: 0;
-  padding: 0;
-}
-.header_white{
-  position: fixed;
-  z-index: 1000;
-  width: 100%;
-  height: 75px;
-  border: 1px solid #eeeeee;
-  background: #f5f5f5;
-}
-.logo{
-  width:70px;
-  height:70px;
-  transition: transform 2s;
-}
-.logo:hover{
-  transform: rotate(360deg);
-}
-.headl{
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-}
-.headl1{
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  margin-left:21px;
-  margin-top:6px;
-}
-.ss{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.sp{
-  margin-right: 5%;
-  text-decoration: none;
-  font-family: 'Oswald', sans-serif;
-} */
 *, *:after, *:before {
 	box-sizing: border-box;
 	padding: 0;
@@ -64,12 +26,12 @@ body {
 	font-size: 14px;
 	line-height: 1;
 	color: #373737;
-	background: #f7f7f7;
+	background: #ecebeb;
   height: 1000px;
 }
 header {
 	width: 100%;
-	background: #f5f5f5;
+	background: white;
 	box-shadow: 3px 3px 1px rgba(0,0,0,.05);
 	padding: 15px 0;
   position:fixed;
@@ -212,7 +174,6 @@ nav {
 }
 #menu.active {
 	max-height: 173px;
-  background: #f5f5f5;
   position: absolute;
   top: 5em;
 }
@@ -295,308 +256,115 @@ hr {
   font-size: 1.3em;
   margin-bottom: 1em;
 }
+section{
+	position: relative;
+	top: 30em;
+}
 
+.slider {
+		width: 90%;
+		margin: 10px auto;
+}
 
-@media(max-width: 970px){
-  .si{
-    font-size: 5em;
-  }
-  .h{
-    top: 7em;
-  }
+.slick-slide {
+	margin: 0px 20px;
 }
-@media(max-width: 950px){
-  .sp{
-    font-size: 1.1em;
-  }
-  .shop{
-    width: 25em;
-  }
+.slick-slide {
+	transition: all ease-in-out .3s;
+	opacity: .2;
 }
-@media(max-width: 880px){
-  .logoimg{
-    width: 50px;
-    height: 55px;
-  }
-  .logo div .logosp1{
-    font-size: 1.7em;
-  }
-  .logo div .logosp2{
-    font-size: 1.09em;
-  }
-  .shop{
-    width: 23em;
-  }
+
+.slick-active {
+	opacity: .5;
 }
-@media(max-width: 845px){
-  #menu a{
-    font-size: 0.8em;
-  }
-  .si{
-    font-size: 4em;
-  }
-  .si1{
-    font-size: 1.5em;
-  }
-  .sr{
-    font-size: 3em;
-  }
-  .shop{
-    width: 20em;
-  }
+
+.slick-current {
+	opacity: 1;
 }
-@media(max-width: 790px){
-  .sp{
-    font-size: 1.08em;
-  }
-  .sr{
-    font-size: 2.5em;
-  }
-  .shop{
-    width: 25em;
-    margin-right: 2em;
-  }
+
+.sl1,.sl2,.sl3,.sl4,.sl5{
+	height: 30em;
+	background: #f7f7f7;
+	box-shadow: 3px 3px 1px rgba(0,0,0,.05);
+	display: flex;
+	justify-content: space-between;
 }
-@media (max-width: 768px) {
-/* показываем кнопку для переключения верхней навигации */
-.nav-toggle {
-display: block;
+.slimg{
+	margin: 0 auto;
+	width: 300px;
+	height: 300px;
 }
-header {
-padding: 10px 0;
+.slimg2{
+	width: 250px;
+	height: 250px;
+	margin-top: 10px;
 }
-/* скрываем верхнее меню, отменяем обтекание, позиционируем его, сместив на высоту шапки сайта */
-#menu {
-max-height: 0;
-background: white;
-float: none;
-position: absolute;
-overflow: hidden;
-top: 5em;
-right: 0;
-left: 0;
-margin: 0;
-padding: 0;
-z-index: 3;
+.slimg3{
+	width: 250px;
+	height: 250px;
+	margin-top: 30px;
 }
-/* делаем элементы списка блочными, чтобы они располагались друг под другом */
-#menu li {
-display: block;
-padding-left: 15px;
-border-bottom: 1px solid #EBEBE3;
-margin-right: 0;
+.sltxt{
+	/* margin: 0 auto; */
+	font-family: impact;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+	color: black;
 }
-/* отменяем обтекание левой и правой колонок, устанавливаем им ширину 100%*/
-.posts-list, aside {
-width: 100%;
-float: none;
+.sltxt2{
+	position: relative;
+	top: 2.8em;
 }
-.widget-post-title {
-font-size: 1.5em;
+.sltxt3{
+	position: relative;
+	top: 1.5em;
 }
-.vl{
-  top: 5em;
+.slh{
+	font-size: 2em;
+	margin: 0 auto;
 }
-.vl1{
-  flex-direction: column;
-  top: 20em;
+.look{
+	width: 6em;
+	height: 3em;
+	background: #868686;
+	margin: 0 auto;
+	border-radius: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	font-family: impact;
+	text-shadow: 2px 2px 1px rgba(0,0,0,.4);
+	font-size: 1.3em;
 }
-.shop{
-  width: 60%;
-  margin: 0 auto;
+footer {
+padding: 30px 0;
+background: #3C3D41;
+color: white;
+position: relative;
+top: 35em;
 }
-.mon{
-  width: 60%;
-  /* margin-left: 10em; */
-  margin: 0 auto;
-}
-.sp{
-  font-size: 1.3em;
-}
-.sr{
-  font-size: 3.7em;
-}
-}
-@media(max-width: 700px){
-  .h{
-    top: 5em;
-  }
-  .sr{
-    font-size: 3em;
-  }
-}
-@media(max-width: 590px){
-  .si{
-    font-size: 3em;
-  }
-  .si1{
-    font-size: 1em;
-  }
-  .sp{
-    font-size: 1.1em;
-  }
-  .sr{
-    font-size: 2.4em;
-  }
-}
-@media(max-width: 520px){
-  .sp{
-    font-size: 1em;
-  }
-}
-@media(max-width: 500px){
-  .shop{
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .mon{
-    width: 60%;
-    height: 25em;
-    margin: 0 auto;
-  }
-  .sp{
-    font-size: 1.1em;
-    margin-left: 2em;
-  }
-  .sr{
-    font-size: 2.4em;
-    margin-left: 0.9em;
-  }
-  hr{
-    margin-left: 2.1em;
-  }
-}
-@media (max-width: 480px) {
-/* выравниванием логотип по центру */
-nav {
-text-align: center;
-}
-/* отменяем обтекание для логотипа */
-.logo {
-float: none;
-margin-bottom: 15px;
-display: flex;
-justify-content: center;
-}
-/* позиционируем меню на увеличившуюся высоту шапки */
-#menu {
-top: 10em;
-}
-/* позиционируем форму поиска по левому краю */
-#searchform {
-float: left;
-margin-left: 0;
-}
-/* убираем верхнюю и нижнюю границы и выравниваем кнопку по центру */
-.post-footer {
-border-top: none;
-border-bottom: none;
-text-align: center;
-}
-/* отменяем позиционирование кнопок соцсетей */
-.post-social {
-position: static;
-text-align: center;
-transform: none;
-margin-top: 20px;
-}
-.widget-post-title {
-font-size: 1.2em;
-}
-/* отменяем обтекание для столбцов подвала страницы */
 .footer-col {
-float: none;
-margin-bottom: 20px;
-width: 100%;
-text-align: center;
+width: 33.3333333333%;
+float: left;
+}
+.footer-col a {
+color: white;
 }
 .footer-col:last-child {
+text-align: right;
+}
+.social-bar-wrap {
 text-align: center;
-margin-bottom: 0;
+margin: auto 0;
 }
-.vl{
-  position: relative;
-  top: 10em;
+.social-bar-wrap a {
+padding: 0 7px;
+font-size: 18px;
+position: relative;
 }
-.h{
-  top: 4em;
-}
-#menu.active {
-  top: 10em;
-}
-.shop{
-  width: 60%;
-  margin: 0 auto;
-}
-.mon{
-  width: 60%;
-  /* margin-left: 10em; */
-  margin: 0 auto;
-}
-.sp{
-  font-size: 1.1em;
-  margin-left: 2em;
-}
-.sr{
-  font-size: 2em;
-  margin-left: 0.9em;
-}
-.shop{
-  width: 80%;
-}
-hr{
-  margin-left: 2.1em;
-}
-}
-@media(max-width: 440px){
-  .si{
-    font-size: 2em;
-  }
-  .si1{
-    font-size: 0.7em;
-  }
-}
-@media(max-width: 400px){
-  .sr{
-    font-size: 3em;
-  }
-  .sp{
-    font-size: 1em;
-  }
-  .mon{
-    height: 20em;
-  }
-  .sp{
-    font-size: 1.1em;
-    margin-left: 2em;
-  }
-  .sr{
-    font-size: 2em;
-    margin-left: 0.9em;
-  }
-  .shop{
-    width: 80%;
-  }
-  hr{
-    margin-left: 2.1em;
-  }
-}
-@media(max-width: 370px){
-  .h{
-    top: 3em;
-  }
-}
-@media(max-width: 300px){
-  .si{
-    font-size: 1.5em;
-  }
-  .si1{
-    font-size: 0.6em;
-  }
-  .h{
-    top: 2em;
-  }
+.social-bar-wrap a:hover {
+font-size: 23px;
+bottom: 5px;
 }
