@@ -145,7 +145,7 @@ nav {
 	width: 40px;
 	height: 40px;
 	margin-left: 20px;
-	background: #EF5A42;
+	background: red;
 	cursor: pointer;
 }
 .nav-toggle span {
@@ -239,6 +239,8 @@ hr {
 .mon{
   width: 30em;
   height: 33em;
+	position: relative;
+	right: 3em;
 }
 .shop{
   width: 30em;
@@ -365,6 +367,6 @@ font-size: 18px;
 position: relative;
 }
 .social-bar-wrap a:hover {
-font-size: 23px;
+/* font-size: 23px; */
 bottom: 5px;
 }
