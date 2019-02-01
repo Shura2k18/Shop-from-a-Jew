@@ -1,3 +1,25 @@
+:root{
+	--red-hue: 360;
+	--main-hue: var(--red-hue);
+
+	--body-bg: hsl(var(--main-hue), 0%, 97%);
+	--body-color: hsl(var(--main-hue), 0%, 22%);
+	--header-bg: hsl(var(--main-hue), 0%, 100%);
+	--logo-div-span-color: hsl(var(--main-hue), 0%, 0%);
+	--menu-a-color: hsl(var(--main-hue), 100%, 0%);
+	--search-input-color: hsl(var(--main-hue), 1%, 62%);
+}
+:root[theme='dark'] {
+	--green-hue: 360;
+	--main-hue: var(--red-hue);
+
+	--body-bg: hsl(var(--main-hue), 0%, 3%);
+	--body-color: hsl(var(--main-hue), 0%, 78%);
+	--header-bg: hsl(var(--main-hue), 0%, 20%);
+	--logo-div-span-color: hsl(var(--main-hue), 0%, 100%);
+	--menu-a-color: hsl(var(--main-hue), 100%, 100%);
+	--search-input-color: hsl(var(--main-hue), 0%, 100%);
+}
 *, *:after, *:before {
 	box-sizing: border-box;
 	padding: 0;
@@ -25,12 +47,12 @@ body {
 	font-family: 'Open Sans', arial, sans-serif;
 	font-size: 14px;
 	line-height: 1;
-	color: #373737;
-	background: #f7f7f7;
+	color: var(--body-color);
+	background: var(--body-bg);
 }
 header {
 	width: 100%;
-	background: white;
+	background: var(--header-bg);;
 	box-shadow: 3px 3px 1px rgba(0,0,0,.05);
 	padding: 15px 0;
 	margin-bottom: 30px;
@@ -50,7 +72,7 @@ nav {
 	float: left;
 }
  .logo div span {
-	color: black;
+	color: var(--logo-div-span-color);
 	display: inline-block;
 	line-height: 30px;
 	border-radius: 50%;
@@ -98,6 +120,7 @@ nav {
 	display: block;
 	line-height: 40px;
   font-family: 'Oswald', sans-serif;
+	color: var(--menu-a-color);
 }
 #menu a:hover {
 	color: #f51c1c;
@@ -119,8 +142,9 @@ nav {
 	height: 40px;
 	overflow: hidden;
 	outline: none;
-	color: #9E9C9C;
+	color: var(--search-input-color);
 	font-style: italic;
+	background: transparent;
 }
 #searchform button {
 	background: transparent;
@@ -142,7 +166,7 @@ nav {
 	width: 40px;
 	height: 40px;
 	margin-left: 20px;
-	background: #EF5A42;
+	background: red;
 	cursor: pointer;
 }
 .nav-toggle span {

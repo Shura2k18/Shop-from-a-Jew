@@ -31,6 +31,7 @@
         <input type="text" placeholder="Искать на сайте...">
         <button type="submit"><i class="fa fa-search"></i></button>
       </form>
+      <input type="button" value="Light/Dark" id="toggle-theme" />
       <ul id="menu">
         <li><a href="" style="color:#f51c1c;">Главная</a></li>
         <li><a href="">О нас</a></li>
@@ -107,5 +108,18 @@
       });
     });
   </script>
+  <script type="text/javascript">
+  const toggleBtn = document.querySelector("#toggle-theme");
+
+     toggleBtn.addEventListener('click', (e) => {
+         console.log("Switching theme");
+         if (document.documentElement.hasAttribute('theme')) {
+             document.documentElement.removeAttribute('theme');
+         }
+         else {
+             document.documentElement.setAttribute('theme', 'dark');
+         }
+     });
+     </script>
   </body>
 </html>

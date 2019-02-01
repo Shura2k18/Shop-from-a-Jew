@@ -1,3 +1,37 @@
+:root{
+	--red-hue: 360;
+	--main-hue: var(--red-hue);
+
+	--body-bg: hsl(var(--main-hue), 0%, 97%);
+	--body-color: hsl(var(--main-hue), 0%, 22%);
+	--header-bg: hsl(var(--main-hue), 0%, 100%);
+	--logo-div-span-color: hsl(var(--main-hue), 0%, 0%);
+	--menu-a-color: hsl(var(--main-hue), 100%, 0%);
+	--menu-active-bg: hsl(var(--main-hue), 0%, 100%);
+	--search-input-color: hsl(var(--main-hue), 1%, 62%);
+	--hr-bg: hsl(var(--main-hue), 0%, 0%);
+	--shop-color: hsl(var(--main-hue), 0%, 0%);
+	--sl-bg: hsl(var(--main-hue), 0%, 97%);
+	--lool-color: hsl(var(--main-hue), 0%, 0%);
+	--slh-color: hsl(var(--main-hue), 0%, 0%);
+}
+:root[theme='dark'] {
+	--green-hue: 360;
+	--main-hue: var(--red-hue);
+
+	--body-bg: hsl(var(--main-hue), 0%, 3%);
+	--body-color: hsl(var(--main-hue), 0%, 78%);
+	--header-bg: hsl(var(--main-hue), 0%, 25%);
+	--logo-div-span-color: hsl(var(--main-hue), 0%, 100%);
+	--menu-a-color: hsl(var(--main-hue), 100%, 100%);
+	--menu-active-bg: hsl(var(--main-hue), 0%, 25%);
+	--search-input-color: hsl(var(--main-hue), 0%, 100%);
+	--hr-bg: hsl(var(--main-hue), 0%, 100%);
+	--shop-color: hsl(var(--main-hue), 0%, 100%);
+	--sl-bg: hsl(var(--main-hue), 0%, 15%);
+	--look-color: hsl(var(--main-hue), 0%, 100%);
+	--slh-color: hsl(var(--main-hue), 0%, 100%);
+}
 *, *:after, *:before {
 	box-sizing: border-box;
 	padding: 0;
@@ -25,13 +59,13 @@ body {
 	font-family: 'Open Sans', arial, sans-serif;
 	font-size: 14px;
 	line-height: 1;
-	color: #373737;
-	background: #ecebeb;
+	color: var(--body-color);
+	background: var(--body-bg);
   height: 1000px;
 }
 header {
 	width: 100%;
-	background: white;
+	background: var(--header-bg);
 	box-shadow: 3px 3px 1px rgba(0,0,0,.05);
 	padding: 15px 0;
   position:fixed;
@@ -51,7 +85,7 @@ nav {
 	float: left;
 }
  .logo div span {
-	color: black;
+	color: var(--logo-div-span-color);
 	display: inline-block;
 	line-height: 30px;
 	border-radius: 50%;
@@ -92,7 +126,7 @@ nav {
     margin-right: 30px;
 }
 #menu a {
-	color: #111;
+	color: var(--menu-a-color);
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: 600;
@@ -121,7 +155,7 @@ nav {
 	height: 40px;
 	overflow: hidden;
 	outline: none;
-	color: #9E9C9C;
+	color: var(--search-input-color);
 	font-style: italic;
   background: transparent;
 }
@@ -134,6 +168,7 @@ nav {
 	color: #f51c1c;
 	cursor: pointer;
 	font-size: 18px;
+	outline:0 none !important;
 }
 #searchform input:focus {
 	outline: 2px solid #EBEBE3;
@@ -176,6 +211,7 @@ nav {
 	max-height: 173px;
   position: absolute;
   top: 5em;
+	background: var(--menu-active-bg);
 }
 .vl{
   position: relative;
@@ -224,7 +260,7 @@ nav {
 }
 hr {
     border: none; /* Убираем границу*/
-    background-color: black; /* Цвет линии*/
+    background-color: var(--hr-bg); /* Цвет линии*/
     color: red; /* Цвет линии для IE6-7*/
     height: 2px; /* Толщина линии*/
     width: 5em;
@@ -246,7 +282,7 @@ hr {
   width: 30em;
   height: 33em;
   margin-left: 5em;
-  color: black;
+  color: var(--shop-color);
 }
 .sr{
   font-family: 'Oswald', sans-serif;
@@ -286,7 +322,7 @@ section{
 
 .sl1,.sl2,.sl3,.sl4,.sl5{
 	height: 30em;
-	background: #f7f7f7;
+	background: var(--sl-bg);
 	box-shadow: 3px 3px 1px rgba(0,0,0,.05);
 	display: flex;
 	justify-content: space-between;
@@ -312,7 +348,6 @@ section{
 	display: flex;
 	justify-content: flex-end;
 	flex-direction: column;
-	color: black;
 }
 .sltxt2{
 	position: relative;
@@ -325,6 +360,7 @@ section{
 .slh{
 	font-size: 2em;
 	margin: 0 auto;
+	color: var(--slh-color);
 }
 .look{
 	width: 6em;
@@ -335,14 +371,16 @@ section{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: black;
+	color: var(--look-color);
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	text-shadow: 3px 3px 2px rgba(0,0,0,.4);
 	font-size: 1.3em;
+	position: relative;
+	top: 1em;
 }
 footer {
 padding: 30px 0;
-background: #3C3D41;
+background: #333333;
 color: white;
 position: relative;
 top: 35em;
@@ -369,4 +407,17 @@ position: relative;
 .social-bar-wrap a:hover {
 /* font-size: 23px; */
 bottom: 5px;
+}
+#toggle-theme{
+	background: transparent;
+	border: none;
+	font-size: 18px;
+	color: white;
+	padding: 0 7px;
+	outline:0 none !important;
+	cursor: pointer;
+	position: relative;
+}
+.social-bar-wrap #toggle-theme:hover{
+	bottom: 5px;
 }
