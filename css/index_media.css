@@ -159,11 +159,20 @@ section{
   top: 15em;
 }
 footer{
-  top: 20em;
+  top: 17em;
 }
 .look{
   margin-top: 1em;
 }
+}
+@media(max-width: 745px){
+  .slimg{
+    height: 200px;
+    width: 200px;
+  }
+  .sl1, .sl4,.sl5{
+    padding-top: 2em;
+  }
 }
 @media(max-width: 700px){
   .h{
@@ -172,6 +181,26 @@ footer{
   .sr{
     font-size: 3em;
   }
+}
+@media(max-width: 650px){
+   .slimg{
+    height: 270px;
+    width: 270px;
+  }
+  .slimg2, .slimg3{
+    height: 220px;
+    width: 220px;
+  }
+  .sl1, .sl4,.sl5{
+    padding-top: 0em;
+  }
+  /* .slimg1, .slimg4, .slimg5{
+    height: 260px;
+    width: 260px;
+  } */
+  /* .sltxt1, .sltxt4, .sltxt5{
+    padding-bottom: 4em;
+  } */
 }
 @media(max-width: 590px){
   .si{
@@ -202,7 +231,7 @@ footer{
   }
   .sltxt1,.sltxt4,.sltxt5{
     position: relative;
-    top: 7em;
+    /* top: 7em; */
   }
 }
 @media(max-width: 500px){
@@ -310,6 +339,9 @@ margin-bottom: 0;
 }
 hr{
   margin-left: 2.1em;
+}
+.sl1,.sl2,.sl3,.sl4,.sl5{
+	height: 20em;
 }
 .slimg{
   width: 150px;

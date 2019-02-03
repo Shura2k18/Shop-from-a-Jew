@@ -5,7 +5,7 @@ $(document).on('ready', function() {
     centerPadding: '60px',
     slidesToShow: 3,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 4000,
     responsive: [
 
       {
@@ -19,6 +19,15 @@ $(document).on('ready', function() {
       },
       {
         breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 650,
         settings: {
           arrows: false,
           centerMode: true,
@@ -37,4 +46,16 @@ $(document).on('ready', function() {
       }
     ]
   });
+});
+
+
+
+
+$(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
 });
